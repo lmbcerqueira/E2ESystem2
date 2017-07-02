@@ -13,9 +13,7 @@ def window_LeftShift(window_elements):
 		window_elements[i].set_bundle(window_elements[i+1].get_bundle())
 		window_elements[i].set_timeFstTransm(window_elements[i+1].get_timeFstTransm())
 		window_elements[i].set_start(window_elements[i+1].get_start())
-		window_elements[i].set_nContact(window_elements[i+1].get_nContact())
-		window_elements[i].set_sent(window_elements[i+1].get_sent())
-
+				
 def window_addEmptyElem(window_elements, seq_nr):
 
 	window_elements[WINDOW_SIZE -1].set_ack(False)
@@ -24,9 +22,7 @@ def window_addEmptyElem(window_elements, seq_nr):
 	window_elements[WINDOW_SIZE -1].set_nRetransm(0)
 	window_elements[WINDOW_SIZE -1].set_timeFstTransm(0)
 	window_elements[WINDOW_SIZE -1].set_start(0)
-	window_elements[WINDOW_SIZE -1].set_nContact(0)
-	window_elements[WINDOW_SIZE -1].set_sent(False)
-
+	
 def window_addNewElem(window_elements, n_buffered, bundle):
 
 	seq_bundle = window_elements[n_buffered].get_seqNr()
@@ -37,7 +33,5 @@ def window_addNewElem(window_elements, n_buffered, bundle):
 	window_elements[n_buffered].set_timeFstTransm(int(time.time()))
 	window_elements[n_buffered].set_start(int(time.time()))
 	window_elements[n_buffered].set_nRetransm(0)
-	window_elements[n_buffered].set_nContact(0)
-	window_elements[n_buffered].set_sent(False)
 
 	return bundle

@@ -1,5 +1,5 @@
 window size 4
-NEW CONTACT: 1498995398
+NEW CONTACT: 1499008478
 [WINDOW----->] seqNr: 0; ack: False
 [WINDOW----->] seqNr: 1; ack: False
 [WINDOW----->] seqNr: 2; ack: False
@@ -10,726 +10,411 @@ NEW CONTACT: 1498995398
 [WINDOW----->] seqNr: 2; ack: False
 [WINDOW----->] seqNr: 3; ack: False
 
-SEND BUNDLE {'city': 'New York', 'name': 'John', 'age': 31, 'seqNr': 0, 'DCU_ID': 2}
-2017-07-02T12:36:45Z
+SEND BUNDLE {'age': 31, 'DCU_ID': 2, 'name': 'John', 'seqNr': 0, 'city': 'New York'}
+2017-07-02T16:14:45Z
 Response from server: 201
 ['2']
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 0; ack: False
 [WINDOW----->] seqNr: 1; ack: False
 [WINDOW----->] seqNr: 2; ack: False
 [WINDOW----->] seqNr: 3; ack: False
 
-SEND BUNDLE {'city': 'New', 'name': 'Phil', 'age': 5, 'seqNr': 1, 'DCU_ID': 2}
-2017-07-02T12:36:48Z
+SEND BUNDLE {'age': 5, 'DCU_ID': 2, 'name': 'Phil', 'seqNr': 1, 'city': 'New'}
+2017-07-02T16:14:49Z
 Response from server: 201
 ['EMPTY']
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 2, 'DCU_ID': 2}
-2017-07-02T12:36:48Z
-Response from server: 201
-['EMPTY']
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 3, 'DCU_ID': 2}
-2017-07-02T12:36:51Z
+SEND BUNDLE {'age': 90, 'DCU_ID': 2, 'name': 'GG', 'seqNr': 2, 'city': 'York'}
+2017-07-02T16:14:49Z
 Response from server: 201
 ['EMPTY']
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
-___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 0; ack: False
 [WINDOW----->] seqNr: 1; ack: False
 [WINDOW----->] seqNr: 2; ack: False
 [WINDOW----->] seqNr: 3; ack: False
 
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 16 > 13
-SEND BUNDLE {'city': 'New York', 'name': 'John', 'age': 31, 'seqNr': 0, 'DCU_ID': 2}
-2017-07-02T12:37:01Z
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 3, 'city': 'Baltimore'}
+2017-07-02T16:14:52Z
 Response from server: 201
-['0', ' 0', ' 0', ' 0', ' 2', ' 1', ' 3']
+['EMPTY']
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 0; ack: False
+[WINDOW----->] seqNr: 1; ack: False
+[WINDOW----->] seqNr: 2; ack: False
+[WINDOW----->] seqNr: 3; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 0; ack: False
+[WINDOW----->] seqNr: 1; ack: False
+[WINDOW----->] seqNr: 2; ack: False
+[WINDOW----->] seqNr: 3; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 0; ack: False
+[WINDOW----->] seqNr: 1; ack: False
+[WINDOW----->] seqNr: 2; ack: False
+[WINDOW----->] seqNr: 3; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 0; ack: False
+[WINDOW----->] seqNr: 1; ack: False
+[WINDOW----->] seqNr: 2; ack: False
+[WINDOW----->] seqNr: 3; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+contact impar
+SEND BUNDLE {'age': 31, 'DCU_ID': 2, 'name': 'John', 'seqNr': 0, 'city': 'New York'}
+2017-07-02T16:15:04Z
+Response from server: 201
+['0', ' 0', ' 1', ' 2']
 bundle 0 RETRANSMSISSION 1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 0; ack: False
 [WINDOW----->] seqNr: 1; ack: False
 [WINDOW----->] seqNr: 2; ack: False
 [WINDOW----->] seqNr: 3; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 0; ack: True
 [WINDOW----->] seqNr: 1; ack: True
 [WINDOW----->] seqNr: 2; ack: True
-[WINDOW----->] seqNr: 3; ack: True
+[WINDOW----->] seqNr: 3; ack: False
 
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 4, 'DCU_ID': 2}
-2017-07-02T12:37:07Z
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 4, 'city': 'Baltimore'}
+2017-07-02T16:15:10Z
 Response from server: 201
 ['3']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 5, 'DCU_ID': 2}
-2017-07-02T12:37:07Z
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 5, 'city': 'Baltimore'}
+2017-07-02T16:15:10Z
 Response from server: 201
 ['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 6, 'DCU_ID': 2}
-2017-07-02T12:37:07Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 7, 'DCU_ID': 2}
-2017-07-02T12:37:07Z
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 6, 'city': 'Baltimore'}
+2017-07-02T16:15:10Z
 Response from server: 201
 ['EMPTY']
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 15 > 13
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 4, 'DCU_ID': 2}
-2017-07-02T12:37:22Z
-Response from server: 201
-['0', ' 0', ' 0', ' 0', ' 5', ' 7', ' 6', ' 4']
-bundle 4 RETRANSMSISSION 1
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: True
-[WINDOW----->] seqNr: 5; ack: True
-[WINDOW----->] seqNr: 6; ack: True
-[WINDOW----->] seqNr: 7; ack: True
-
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 0, 'DCU_ID': 2}
-2017-07-02T12:37:28Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'New York', 'name': 'John', 'age': 31, 'seqNr': 1, 'DCU_ID': 2}
-2017-07-02T12:37:28Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'New', 'name': 'Phil', 'age': 5, 'seqNr': 2, 'DCU_ID': 2}
-2017-07-02T12:37:28Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 3, 'DCU_ID': 2}
-2017-07-02T12:37:28Z
-Response from server: 201
-['EMPTY']
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 15 > 13
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 0, 'DCU_ID': 2}
-2017-07-02T12:37:43Z
-Response from server: 201
-['4', ' 4', ' 0', ' 0', ' 3', ' 2', ' 1']
-bundle 0 RETRANSMSISSION 1
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: True
-[WINDOW----->] seqNr: 1; ack: True
-[WINDOW----->] seqNr: 2; ack: True
+nContact:1
 [WINDOW----->] seqNr: 3; ack: True
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
 
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 4, 'DCU_ID': 2}
-2017-07-02T12:37:49Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 5, 'DCU_ID': 2}
-2017-07-02T12:37:49Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 6, 'DCU_ID': 2}
-2017-07-02T12:37:49Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 7, 'DCU_ID': 2}
-2017-07-02T12:37:49Z
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 7, 'city': 'Baltimore'}
+2017-07-02T16:15:13Z
 Response from server: 201
 ['EMPTY']
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 15 > 13
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 4, 'DCU_ID': 2}
-2017-07-02T12:38:04Z
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+contact impar
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 4, 'city': 'Baltimore'}
+2017-07-02T16:15:31Z
 Response from server: 201
-['0', ' 0', ' 0', ' 0', ' 4', ' 6', ' 5', ' 7']
+['0', ' 0', ' 4', ' 6', ' 5', ' 7']
 bundle 4 RETRANSMSISSION 1
 ___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: True
-[WINDOW----->] seqNr: 5; ack: True
-[WINDOW----->] seqNr: 6; ack: True
-[WINDOW----->] seqNr: 7; ack: True
-
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 0, 'DCU_ID': 2}
-2017-07-02T12:38:10Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 1, 'DCU_ID': 2}
-2017-07-02T12:38:10Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'New York', 'name': 'John', 'age': 31, 'seqNr': 2, 'DCU_ID': 2}
-2017-07-02T12:38:11Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'New', 'name': 'Phil', 'age': 5, 'seqNr': 3, 'DCU_ID': 2}
-2017-07-02T12:38:11Z
-Response from server: 201
-['EMPTY']
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-exception IP
-NOT_CONNECTED
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 16 > 13
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 0, 'DCU_ID': 2}
-2017-07-02T12:38:26Z
-Response from server: 201
-['4', ' 4', ' 0', ' 0', ' 1', ' 2', ' 3']
-bundle 0 RETRANSMSISSION 1
-___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 16 > 15
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 1, 'DCU_ID': 2}
-2017-07-02T12:38:26Z
-Response from server: 201
-['EMPTY']
-bundle 1 RETRANSMSISSION 1
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: False
-[WINDOW----->] seqNr: 1; ack: False
-[WINDOW----->] seqNr: 2; ack: False
-[WINDOW----->] seqNr: 3; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 0; ack: True
-[WINDOW----->] seqNr: 1; ack: True
-[WINDOW----->] seqNr: 2; ack: True
-[WINDOW----->] seqNr: 3; ack: True
-
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 4, 'DCU_ID': 2}
-2017-07-02T12:38:32Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 5, 'DCU_ID': 2}
-2017-07-02T12:38:32Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 6, 'DCU_ID': 2}
-2017-07-02T12:38:32Z
-Response from server: 201
-['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 7, 'DCU_ID': 2}
-2017-07-02T12:38:32Z
-Response from server: 201
-['EMPTY']
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 15 > 13
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 4, 'DCU_ID': 2}
-2017-07-02T12:38:47Z
-Response from server: 201
-['0', ' 0', ' 1']
-bundle 4 RETRANSMSISSION 1
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 18 > 15
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 5, 'DCU_ID': 2}
-2017-07-02T12:38:50Z
+nContact:1
+contact impar
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 5, 'city': 'Baltimore'}
+2017-07-02T16:15:31Z
 Response from server: 201
 ['EMPTY']
 bundle 5 RETRANSMSISSION 1
 ___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 18 > 15
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 6, 'DCU_ID': 2}
-2017-07-02T12:38:50Z
+nContact:1
+contact impar
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 6, 'city': 'Baltimore'}
+2017-07-02T16:15:31Z
 Response from server: 201
 ['EMPTY']
 bundle 6 RETRANSMSISSION 1
 ___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 18 > 15
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 7, 'DCU_ID': 2}
-2017-07-02T12:38:50Z
-Response from server: 201
-['EMPTY']
-bundle 7 RETRANSMSISSION 1
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 27 > 26
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 4, 'DCU_ID': 2}
-2017-07-02T12:39:14Z
-Response from server: 201
-['4', ' 5', ' 7', ' 6']
-bundle 4 RETRANSMSISSION 2
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-[WINDOW----->] seqNr: 4; ack: False
-[WINDOW----->] seqNr: 5; ack: False
-[WINDOW----->] seqNr: 6; ack: False
-[WINDOW----->] seqNr: 7; ack: False
-
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
-___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: True
 [WINDOW----->] seqNr: 5; ack: True
 [WINDOW----->] seqNr: 6; ack: True
 [WINDOW----->] seqNr: 7; ack: True
 
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 0, 'DCU_ID': 2}
-2017-07-02T12:39:20Z
+SEND BUNDLE {'age': 90, 'DCU_ID': 2, 'name': 'GG', 'seqNr': 0, 'city': 'York'}
+2017-07-02T16:15:37Z
 Response from server: 201
 ['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 1, 'DCU_ID': 2}
-2017-07-02T12:39:20Z
+SEND BUNDLE {'age': 31, 'DCU_ID': 2, 'name': 'John', 'seqNr': 1, 'city': 'New York'}
+2017-07-02T16:15:37Z
 Response from server: 201
 ['EMPTY']
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 2, 'DCU_ID': 2}
-2017-07-02T12:39:20Z
+SEND BUNDLE {'age': 5, 'DCU_ID': 2, 'name': 'Phil', 'seqNr': 2, 'city': 'New'}
+2017-07-02T16:15:37Z
 Response from server: 201
 ['EMPTY']
-SEND BUNDLE {'city': 'New York', 'name': 'John', 'age': 31, 'seqNr': 3, 'DCU_ID': 2}
-2017-07-02T12:39:20Z
+SEND BUNDLE {'age': 90, 'DCU_ID': 2, 'name': 'GG', 'seqNr': 3, 'city': 'York'}
+2017-07-02T16:15:37Z
 Response from server: 201
 ['EMPTY']
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 0; ack: False
 [WINDOW----->] seqNr: 1; ack: False
 [WINDOW----->] seqNr: 2; ack: False
 [WINDOW----->] seqNr: 3; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 0; ack: False
 [WINDOW----->] seqNr: 1; ack: False
 [WINDOW----->] seqNr: 2; ack: False
 [WINDOW----->] seqNr: 3; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 0; ack: False
 [WINDOW----->] seqNr: 1; ack: False
 [WINDOW----->] seqNr: 2; ack: False
 [WINDOW----->] seqNr: 3; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 0; ack: False
 [WINDOW----->] seqNr: 1; ack: False
 [WINDOW----->] seqNr: 2; ack: False
 [WINDOW----->] seqNr: 3; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 0; ack: False
 [WINDOW----->] seqNr: 1; ack: False
 [WINDOW----->] seqNr: 2; ack: False
 [WINDOW----->] seqNr: 3; ack: False
 
 ___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 16 > 13
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 0, 'DCU_ID': 2}
-2017-07-02T12:39:36Z
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 0; ack: False
+[WINDOW----->] seqNr: 1; ack: False
+[WINDOW----->] seqNr: 2; ack: False
+[WINDOW----->] seqNr: 3; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 0; ack: False
+[WINDOW----->] seqNr: 1; ack: False
+[WINDOW----->] seqNr: 2; ack: False
+[WINDOW----->] seqNr: 3; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+contact impar
+SEND BUNDLE {'age': 90, 'DCU_ID': 2, 'name': 'GG', 'seqNr': 0, 'city': 'York'}
+2017-07-02T16:15:58Z
 Response from server: 201
-['4', ' 0', ' 1', ' 2', ' 3', ' 0']
+['4', ' 0', ' 0', ' 2', ' 3', ' 1']
 bundle 0 RETRANSMSISSION 1
 ___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 16 > 15
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 1, 'DCU_ID': 2}
-2017-07-02T12:39:36Z
+nContact:1
+contact impar
+SEND BUNDLE {'age': 31, 'DCU_ID': 2, 'name': 'John', 'seqNr': 1, 'city': 'New York'}
+2017-07-02T16:15:58Z
 Response from server: 201
 ['EMPTY']
 bundle 1 RETRANSMSISSION 1
 ___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 16 > 15
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 2, 'DCU_ID': 2}
-2017-07-02T12:39:36Z
+nContact:1
+contact impar
+SEND BUNDLE {'age': 5, 'DCU_ID': 2, 'name': 'Phil', 'seqNr': 2, 'city': 'New'}
+2017-07-02T16:15:58Z
 Response from server: 201
 ['EMPTY']
 bundle 2 RETRANSMSISSION 1
 ___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 16 > 15
-SEND BUNDLE {'city': 'New York', 'name': 'John', 'age': 31, 'seqNr': 3, 'DCU_ID': 2}
-2017-07-02T12:39:36Z
+nContact:1
+contact impar
+SEND BUNDLE {'age': 90, 'DCU_ID': 2, 'name': 'GG', 'seqNr': 3, 'city': 'York'}
+2017-07-02T16:15:58Z
 Response from server: 201
 ['EMPTY']
 bundle 3 RETRANSMSISSION 1
@@ -739,86 +424,306 @@ bundle 3 RETRANSMSISSION 1
 [WINDOW----->] seqNr: 3; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 0; ack: True
 [WINDOW----->] seqNr: 1; ack: True
 [WINDOW----->] seqNr: 2; ack: True
 [WINDOW----->] seqNr: 3; ack: True
 
-SEND BUNDLE {'city': 'New', 'name': 'Phil', 'age': 5, 'seqNr': 4, 'DCU_ID': 2}
-2017-07-02T12:39:42Z
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 4, 'city': 'Baltimore'}
+2017-07-02T16:16:05Z
 Response from server: 201
 ['EMPTY']
-SEND BUNDLE {'city': 'York', 'name': 'GG', 'age': 90, 'seqNr': 5, 'DCU_ID': 2}
-2017-07-02T12:39:42Z
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 5, 'city': 'Baltimore'}
+2017-07-02T16:16:05Z
 Response from server: 201
 ['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 6, 'DCU_ID': 2}
-2017-07-02T12:39:42Z
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 6, 'city': 'Baltimore'}
+2017-07-02T16:16:05Z
 Response from server: 201
 ['EMPTY']
-SEND BUNDLE {'city': 'Baltimore', 'name': 'NNN', 'age': 12, 'seqNr': 7, 'DCU_ID': 2}
-2017-07-02T12:39:42Z
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 7, 'city': 'Baltimore'}
+2017-07-02T16:16:05Z
 Response from server: 201
 ['EMPTY']
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+exception IP
+NOT_CONNECTED
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+exception IP
+NOT_CONNECTED
+exception IP
+NOT_CONNECTED
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 ___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False
 [WINDOW----->] seqNr: 7; ack: False
 
 ___________CHECK TIMER_____________
-N retransmition
-now - start > ((self.nRetransm +1) * RTO): 15 > 13
-SEND BUNDLE {'city': 'New', 'name': 'Phil', 'age': 5, 'seqNr': 4, 'DCU_ID': 2}
-2017-07-02T12:39:57Z
+nContact:1
+contact impar
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 4, 'city': 'Baltimore'}
+2017-07-02T16:16:26Z
 Response from server: 201
-['0', ' 1', ' 2', ' 3', ' 0', ' 5', ' 4', ' 7', ' 6']
+['0', ' 3', ' 0', ' 2', ' 1', ' 3']
 bundle 4 RETRANSMSISSION 1
 ___________CHECK TIMER_____________
+nContact:1
+contact impar
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 5, 'city': 'Baltimore'}
+2017-07-02T16:16:26Z
+Response from server: 201
+['EMPTY']
+bundle 5 RETRANSMSISSION 1
 ___________CHECK TIMER_____________
+nContact:1
+contact impar
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 6, 'city': 'Baltimore'}
+2017-07-02T16:16:26Z
+Response from server: 201
+['EMPTY']
+bundle 6 RETRANSMSISSION 1
 ___________CHECK TIMER_____________
+nContact:1
+contact impar
+SEND BUNDLE {'age': 12, 'DCU_ID': 2, 'name': 'NNN', 'seqNr': 7, 'city': 'Baltimore'}
+2017-07-02T16:16:26Z
+Response from server: 201
+['EMPTY']
+bundle 7 RETRANSMSISSION 1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+[WINDOW----->] seqNr: 4; ack: False
+[WINDOW----->] seqNr: 5; ack: False
+[WINDOW----->] seqNr: 6; ack: False
+[WINDOW----->] seqNr: 7; ack: False
+
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
+___________CHECK TIMER_____________
+nContact:1
 [WINDOW----->] seqNr: 4; ack: False
 [WINDOW----->] seqNr: 5; ack: False
 [WINDOW----->] seqNr: 6; ack: False

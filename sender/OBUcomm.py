@@ -33,8 +33,6 @@ class TestConnectionThread(threading.Thread):
 		while(True):
 			sleep(1)
 
-			newContact = False
-
 			connected = ping()
 
 			if connected == False:
@@ -58,6 +56,7 @@ class TestConnectionThread(threading.Thread):
 				else: #settings.connectionState.connected == False:
 
 					if time.time() - settings.connectionState.endLastContact > 10: #novo contacto!!!
+						settings.connectionState.nContact += 1
 						settings.connectionState.connected = True
 						settings.connectionState.start = int(time.time())
 						# settings.connectionState.endLastContact mantem se
@@ -69,11 +68,6 @@ class TestConnectionThread(threading.Thread):
 						settings.connectionState.connected = True
 
 				settings.connected_lock.release()
-
-			if newContact == True:
-				for i in range(n_buffered):
-					window_elements[i].set_nContact(window_elements[i].get_nContact() + 1)
-					window_elements[i].set_sent(False)
 
 
 class WindowManagThread(threading.Thread):
@@ -119,7 +113,6 @@ class WindowManagThread(threading.Thread):
 						bundle = window_addNewElem(window_elements, n_buffered, bundle)
 						if connected == True:
 							send_bundle(bundle)
-							window_elements[n_buffered].set_nContact(1)
 						n_buffered += 1
 
 

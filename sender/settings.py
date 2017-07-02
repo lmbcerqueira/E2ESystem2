@@ -9,7 +9,7 @@ DCU_ID = 2
 
 QUEUE_MAX_SIZE = 2048
 
-N_BITS_FOR_WINDOW = 3
+N_BITS_FOR_WINDOW = 5
 
 MAX_SEQ_NUMBER = 2**N_BITS_FOR_WINDOW -1
 
@@ -24,6 +24,7 @@ class ConnectionInfo(object):
         self.start = start
         self.endLastContact = endLastContact
         self.prevsStateconn = prevsStateconn
+        self.nContact = 0     
 
 
 def init():
@@ -43,4 +44,4 @@ def init():
     global nTransm
     sumRTT = 0
     nTransm = 0
-    RTO = 15
+    RTO = 20

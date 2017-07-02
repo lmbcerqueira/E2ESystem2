@@ -1,105 +1,77 @@
 connecting to localhost port 4999
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "New York", "age": 31, "name": "John"}
-msg sent: {"city": "New", "age": 5, "name": "Phil"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "Baltimore", "age": 12, "name": "NNN"}
-msg sent: {"city": "York", "age": 90, "name": "GG"}
+msg sent: {"name": "John", "city": "New York", "age": 31}
+msg sent: {"name": "Phil", "city": "New", "age": 5}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "John", "city": "New York", "age": 31}
+msg sent: {"name": "Phil", "city": "New", "age": 5}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "John", "city": "New York", "age": 31}
+msg sent: {"name": "Phil", "city": "New", "age": 5}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "John", "city": "New York", "age": 31}
+msg sent: {"name": "Phil", "city": "New", "age": 5}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "John", "city": "New York", "age": 31}
+msg sent: {"name": "Phil", "city": "New", "age": 5}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "John", "city": "New York", "age": 31}
+msg sent: {"name": "Phil", "city": "New", "age": 5}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "John", "city": "New York", "age": 31}
+msg sent: {"name": "Phil", "city": "New", "age": 5}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "John", "city": "New York", "age": 31}
+msg sent: {"name": "Phil", "city": "New", "age": 5}
+msg sent: {"name": "GG", "city": "York", "age": 90}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
+msg sent: {"name": "NNN", "city": "Baltimore", "age": 12}
 Traceback (most recent call last):
-  File "testclient.py", line 73, in <module>
+  File "testclient.py", line 69, in <module>
     cycle(message)
   File "testclient.py", line 20, in cycle
     sock.sendall(outMsg_bytes)

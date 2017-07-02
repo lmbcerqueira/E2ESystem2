@@ -12,14 +12,10 @@ class WindowBuffer_Element(object):
         self.nRetransm = 0
         self.timeFstTransm = 0
         self.start = 0
-        self.nContact = 0
         self.sent = False #se ja retransmiti no contacto nContact
 
     def set_ack(self, ack):
         self.ack = ack
-
-    def set_sent(self, sent):
-        self.sent = sent
 
     def set_timeFstTransm(self, curtime):
         self.timeFstTransm = curtime
@@ -27,14 +23,8 @@ class WindowBuffer_Element(object):
     def set_bundle(self, bundle):
         self.bundle = bundle
 
-    def set_nContact(self, nContact):
-        self.nContact = nContact
-
     def get_bundle(self):
         return self.bundle
-
-    def get_sent(self):
-        return self.sent
 
     def get_timeFstTransm(self):
         return self.timeFstTransm;
@@ -51,9 +41,6 @@ class WindowBuffer_Element(object):
     def get_nRetransm(self):
         return self.nRetransm
 
-    def get_nContact(self):
-        return self.nContact
-
     def set_seqNr(self, seqNr):
         self.seqNr = seqNr
 
@@ -66,7 +53,7 @@ class WindowBuffer_Element(object):
     def check_timer(self, windowPos):
         
         print("___________CHECK TIMER_____________")
-
+       
         if windowPos == 0:
             RTO = settings.RTO -2
         else:
@@ -74,32 +61,33 @@ class WindowBuffer_Element(object):
 
         settings.connected_lock.acquire()
         connected = settings.connectionState.connected
+        nContact = settings.connectionState.nContact
+        startContact = settings.connectionState.start
         settings.connected_lock.release()
 
         now = int(time.time())
-                
+        print("nContact:%d" % nContact)     
         expired = False
+       
         if self.ack == False and connected == True:
 
             #devo retransmitir se:
-
-            # acabou de se estabelecer um contacto par (n recebi ack no impar, devo retransmitir)
-            if self.nContact % 2 == 0 and self.sent == False:
+    
+            # se contacto par (altura de receber acks - transmite só o 1º para receber os acks de todos)
+            if windowPos == 0 and nContact % 2 == 0 and (now-self.start) > ((self.nRetransm +1) * RTO):
                 expired = True
-                self.sent = True
-                print("new contact")
+                print("contact par - Retransmit first element")
+
+            # se contacto impar (n recebi ack no par, devo retransmitir)
+            if nContact % 2 != 0 and (now-self.start) > ((self.nRetransm + 1) * RTO):
+                expired = True
+                print("contact impar")
             
-            # contacto longo, já retransmiti, já passou RTO e ainda não recebi ack    
-            elif (now-self.start) > ((self.nRetransm + 1) * RTO):
-                print("N retransmition")
-                expired = True
-                print("now - start > ((self.nRetransm +1) * RTO): %d > %d" % (int(now-self.start), ((self.nRetransm +1) * RTO)))
-
-            # contacto longo, enviei a 1ª vez, ja passou RTO, não recebi ack (as seguintes retransmissoes entram no 2º elif) 
-            #elif (now-self.start) >= RTO and self.nRetransm == 0:
-                #print("1st retransmition")
+            # contacto longo, já passou RTO e ainda não recebi ack    
+            #elif (now - startContact) > RTO and (now-self.start) > ((self.nRetransm + 1) * RTO):
+                #print("N retransmition")
                 #expired = True
-                #print("now-start > RTO: %d > %d" % ((now-self.start), RTO))
+                #print("now - start > ((self.nRetransm +1) * RTO): %d > %d" % (int(now-self.start), ((self.nRetransm +1) * RTO)))
 
 
         if expired == True:
