@@ -82,7 +82,7 @@ class WindowBuffer_Element(object):
                 self.sent = True
                 print("NRETRANSM: %d" % self.nRetransm)
 
-            else if connected == True and self.nContact % 2 == 0 and (now-start) >= (self.nRetransm*10):
+            elif connected == True and self.nContact % 2 == 0 and (now-start) >= (self.nRetransm*10):
                 print("RETRANSMSISSION bundle %d" % self.seqNr)
                 send_bundle(self.bundle)
                 self.nRetransm += 1

@@ -19,10 +19,10 @@ IGNORE_PERCENT = 0.20 #for RTO calculation
 
 class ConnectionInfo(object):
 
-    def __init__(self, connected, lastFinish, prevsStateconn):
+    def __init__(self, connected, start, endLastContact , prevsStateconn):
         self.connected = connected
         self.start = start
-        self.lastFinish = lastFinish
+        self.endLastContact = endLastContact
         self.prevsStateconn = prevsStateconn
 
 
@@ -31,7 +31,7 @@ def init():
     ## test if connected to and OBU ##
     global connectionState
     global connected_lock
-    connectionState = ConnectionInfo(False, -1, -1)
+    connectionState = ConnectionInfo(False, -1, -1, False)
     connected_lock = threading.Lock()
 
     global rcv_seqNr

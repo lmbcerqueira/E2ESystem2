@@ -40,32 +40,32 @@ class TestConnectionThread(threading.Thread):
 			if connected == False:
 				print("NOT_CONNECTED")
 				settings.connected_lock.acquire()
-				if settings.ConnectionInfo.connected == True:
-					settings.ConnectionInfo.connected = False
-					settings.ConnectionInfo.start = -1
-					settings.ConnectionInfo.lastFinish = int(time.time())
-					settings.ConnectionInfo.prevsStateconn = True
+				if settings.connectionState.connected == True:
+					settings.connectionState.connected = False
+					settings.connectionState.start = -1
+					settings.connectionState.endLastContact = int(time.time())
+					settings.connectionState.prevsStateconn = True
 				settings.connected_lock.release()
 
 
 			if connected == True:
 				settings.connected_lock.acquire()
 
-				if settings.ConnectionInfo.connected == True:
+				if settings.connectionState.connected == True:
 					pass # do nothing - same contact
 
 				# pode ser um novo contacto ou não (pode ter sido apenas uma perda instantanea)
-				else: #settings.ConnectionInfo.connected == False:
+				else: #settings.connectionState.connected == False:
 
-					if time.time() - settings.ConnectionInfo.lastFinish > 10: #novo contacto!!!
-						settings.ConnectionInfo.connected = True
-						settings.ConnectionInfo.start = int(time.time())
-						# settings.ConnectionInfo.lastFinish mantem se
-						settings.ConnectionInfo.prevsStateconn = False
+					if time.time() - settings.connectionState.endLastContact > 10: #novo contacto!!!
+						settings.connectionState.connected = True
+						settings.connectionState.start = int(time.time())
+						# settings.connectionState.endLastContact mantem se
+						settings.connectionState.prevsStateconn = False
 						newContact = True
 
 					else: #mesmo contacto
-						settings.ConnectionInfo.connected = True
+						settings.connectionState.connected = True
 
 				settings.connected_lock.release()
 

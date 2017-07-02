@@ -19,7 +19,7 @@ def window_LeftShift(window_elements):
 def window_addEmptyElem(window_elements, seq_nr):
 
 	window_elements[WINDOW_SIZE -1].set_ack(False)
-	window_elements[WINDOW_SIZE -1].set_seqNr(seq_nr % (WINDOW_SIZE+1))
+	window_elements[WINDOW_SIZE -1].set_seqNr(seq_nr % (MAX_SEQ_NUMBER+1))
 	window_elements[WINDOW_SIZE -1].set_bundle("")
 	window_elements[WINDOW_SIZE -1].set_nRetransm(0)
 	window_elements[WINDOW_SIZE -1].set_timeFstTransm(0)
@@ -38,6 +38,6 @@ def window_addNewElem(window_elements, n_buffered, bundle):
 	window_elements[n_buffered].set_start(int(time.time()))
 	window_elements[n_buffered].set_nRetransm(0)
 	window_elements[n_buffered].set_nContact(0)
-	window_elements[n_buffered].set_sent(False)	
+	window_elements[n_buffered].set_sent(False)
 
 	return bundle
