@@ -74,7 +74,6 @@ class WindowBuffer_Element(object):
 
         settings.connected_lock.acquire()
         connected = settings.connectionState.connected
-        start = settings.connectionState.start
         settings.connected_lock.release()
 
         now = int(time.time())
@@ -91,20 +90,20 @@ class WindowBuffer_Element(object):
                 print("new contact")
             
             # contacto longo, já retransmiti, já passou RTO e ainda não recebi ack    
-            elif (now-start) > ((self.nRetransm + 1) * RTO):
+            elif (now-self.start) > ((self.nRetransm + 1) * RTO):
                 print("N retransmition")
                 expired = True
-                print("now - start > ((self.nRetransm +1) * RTO): %d > %d" % (int(now-start), ((self.nRetransm +1) * RTO)))
+                print("now - start > ((self.nRetransm +1) * RTO): %d > %d" % (int(now-self.start), ((self.nRetransm +1) * RTO)))
 
             # contacto longo, enviei a 1ª vez, ja passou RTO, não recebi ack (as seguintes retransmissoes entram no 2º elif) 
-            #elif (now-start) >= RTO and self.nRetransm == 0:
+            #elif (now-self.start) >= RTO and self.nRetransm == 0:
                 #print("1st retransmition")
                 #expired = True
-                #print("now-start > RTO: %d > %d" % ((now-start), RTO))
+                #print("now-start > RTO: %d > %d" % ((now-self.start), RTO))
 
 
         if expired == True:
            send_bundle(self.bundle)
+           self.start = int(time.time())
            self.nRetransm += 1 
            print("bundle %d RETRANSMSISSION %d" % (self.seqNr, self.nRetransm))
-
