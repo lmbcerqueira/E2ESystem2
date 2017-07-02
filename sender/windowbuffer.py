@@ -74,14 +74,14 @@ class WindowBuffer_Element(object):
             #devo retransmitir se:
     
             # se contacto par (altura de receber acks - transmite só o 1º para receber os acks de todos)
-            if windowPos == 0 and nContact % 2 == 0 and (now-self.start) > ((self.nRetransm +1) * RTO):
+            if windowPos == 0 and nContact % 2 == 0 and (now-self.start) > RTO:
                 expired = True
-                print("contact par - Retransmit first element")
+                print("contact par - Retransmit first element: %d" % int(time.time()))
 
             # se contacto impar (n recebi ack no par, devo retransmitir)
-            if nContact % 2 != 0 and (now-self.start) > ((self.nRetransm + 1) * RTO):
+            if nContact % 2 != 0 and (now-self.start) >  RTO:
                 expired = True
-                print("contact impar")
+                print("contact impar: %d" % int(time.time()))
             
             # contacto longo, já passou RTO e ainda não recebi ack    
             #elif (now - startContact) > RTO and (now-self.start) > ((self.nRetransm + 1) * RTO):
