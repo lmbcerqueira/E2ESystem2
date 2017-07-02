@@ -63,27 +63,48 @@ class WindowBuffer_Element(object):
     def set_start(self, time):
         self.start = time
 
-    def check_timer(self):
+    def check_timer(self, windowPos):
+        
+        print("___________CHECK TIMER_____________")
+
+        if windowPos == 0:
+            RTO = settings.RTO -2
+        else:
+            RTO = settings.RTO
 
         settings.connected_lock.acquire()
         connected = settings.connectionState.connected
         start = settings.connectionState.start
         settings.connected_lock.release()
 
-        now = time.time()
-
-        if self.ack == False:
+        now = int(time.time())
+                
+        expired = False
+        if self.ack == False and connected == True:
 
             #devo retransmitir se:
-            if connected == True and self.nContact % 2 == 0 and self.sent == False:
-                print("RETRANSMSISSION bundle %d" % self.seqNr)
-                send_bundle(self.bundle)
-                self.nRetransm += 1
-                self.sent = True
-                print("NRETRANSM: %d" % self.nRetransm)
 
-            elif connected == True and self.nContact % 2 == 0 and (now-start) >= (self.nRetransm*10):
-                print("RETRANSMSISSION bundle %d" % self.seqNr)
-                send_bundle(self.bundle)
-                self.nRetransm += 1
-                print("NRETRANSM: %d" % self.nRetransm)
+            # acabou de se estabelecer um contacto par (n recebi ack no impar, devo retransmitir)
+            if self.nContact % 2 == 0 and self.sent == False:
+                expired = True
+                self.sent = True
+                print("new contact")
+            
+            # contacto longo, já retransmiti, já passou RTO e ainda não recebi ack    
+            elif (now-start) > ((self.nRetransm + 1) * RTO):
+                print("N retransmition")
+                expired = True
+                print("now - start > ((self.nRetransm +1) * RTO): %d > %d" % (int(now-start), ((self.nRetransm +1) * RTO)))
+
+            # contacto longo, enviei a 1ª vez, ja passou RTO, não recebi ack (as seguintes retransmissoes entram no 2º elif) 
+            #elif (now-start) >= RTO and self.nRetransm == 0:
+                #print("1st retransmition")
+                #expired = True
+                #print("now-start > RTO: %d > %d" % ((now-start), RTO))
+
+
+        if expired == True:
+           send_bundle(self.bundle)
+           self.nRetransm += 1 
+           print("bundle %d RETRANSMSISSION %d" % (self.seqNr, self.nRetransm))
+

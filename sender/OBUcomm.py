@@ -63,6 +63,7 @@ class TestConnectionThread(threading.Thread):
 						# settings.connectionState.endLastContact mantem se
 						settings.connectionState.prevsStateconn = False
 						newContact = True
+						print("NEW CONTACT: %d" % settings.connectionState.start)
 
 					else: #mesmo contacto
 						settings.connectionState.connected = True
@@ -113,7 +114,7 @@ class WindowManagThread(threading.Thread):
 						pass
 					else: #add bundle to window
 						settings.connected_lock.acquire()
-						connected = settings.connected
+						connected = settings.connectionState.connected
 						settings.connected_lock.release()
 						bundle = window_addNewElem(window_elements, n_buffered, bundle)
 						if connected == True:
@@ -141,7 +142,8 @@ class WindowManagThread(threading.Thread):
 
 			#check for expired timers
 			for i in range(n_buffered):
-				window_elements[i].check_timer()
+				window_elements[i].check_timer(i)
+
 
 			for i in range(WINDOW_SIZE): #DEBUG
 				print("[WINDOW----->] seqNr: %d; ack: %s" % (window_elements[i].get_seqNr(), window_elements[i].get_ack()))
